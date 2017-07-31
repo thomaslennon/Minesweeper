@@ -3,7 +3,6 @@ package ie.lennon.minesweeper;
 public class MindSweeper {
 
     private static final String  mine ="*";
-    private static final String dot = ".";
 
     public static String[][] hint(String mineField[][]){
         String [][] hintField = new String [mineField.length][mineField[0].length];

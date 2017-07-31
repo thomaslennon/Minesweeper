@@ -8,7 +8,7 @@ import static org.junit.Assert.assertTrue;
 public class MindSweeperHintTest {
 
     @Test
-    public void OnebyOneGame(){
+    public void Given1by1GameWhen1MineThenMine(){
         String[][] minefield = {{"*"}};
         String[][] expected = {{"*"}};
 
@@ -16,8 +16,9 @@ public class MindSweeperHintTest {
         assertTrue(compareArrays(expected, result));
     }
 
+
     @Test
-    public void twoByTwoGame(){
+    public void given2x2FieldWith2MinesThenHints(){
         String[][] minefield = {{"*", "."},
                                 {".", "*"}};
         String[][] expected = {{"*", "2"},
@@ -28,7 +29,7 @@ public class MindSweeperHintTest {
     }
 
     @Test
-    public void twoByTwoGame2(){
+    public void twoByTwoGameScenario2(){
         String[][] minefield = {{".", "*"},
                 {"*", "."}};
         String[][] expected = {{"2", "*"},
@@ -39,7 +40,7 @@ public class MindSweeperHintTest {
     }
 
     @Test
-    public void twoByTwoGame3(){
+    public void twoByTwoGameScenario3(){
         String[][] minefield = {{".", "*"},
                 {".", "."}};
         String[][] expected = {{"1", "*"},
