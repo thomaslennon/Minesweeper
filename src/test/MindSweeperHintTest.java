@@ -16,6 +16,18 @@ public class MindSweeperHintTest {
         assertTrue(compareArrays(expected, result));
     }
 
+    @Test
+    public void given2x2FieldWith4MinesThenHints(){
+        String[][] minefield = {{"*", "*"},
+                {"*", "*"}};
+        String[][] expected = {{"*", "*"},
+                {"*", "*"}};
+
+        String result[][] = MindSweeper.hint(minefield);
+        assertTrue(compareArrays(expected, result));
+    }
+
+
 
     @Test
     public void given2x2FieldWith2MinesThenHints(){
