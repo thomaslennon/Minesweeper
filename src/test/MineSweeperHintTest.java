@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertTrue;
 
-public class MindSweeperHintTest {
+public class MineSweeperHintTest {
 
     @Test
     public void Given1by1GameWhen1MineThenMine(){
